@@ -12,7 +12,7 @@ mongoose
   .connect(
     "mongodb+srv://rosan:" +
       process.env.MONGO_ATLAS_PW +
-      "spg7maZVNfZPjfhw@cluster0.2q4hy.mongodb.net/myFirstDatabase",
+      "@cluster0.2q4hy.mongodb.net/myFirstDatabase",
       {useNewUrlParser: true, useUnifiedTopology: true}
   )
   .then(() => {

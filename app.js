@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://rosan:spg7maZVNfZPjfhw@cluster0.2q4hy.mongodb.net/myFirstDatabase",
+    "mongodb+srv://rosan:"+spg7maZVNfZPjfhw+"@cluster0.2q4hy.mongodb.net/myFirstDatabase",
       {useNewUrlParser: true, useUnifiedTopology: true}
   )
   .then(() => {
@@ -19,6 +19,7 @@ mongoose
   .catch(() => {
     console.log("Connection failed!");
   });
+  mongoose.set('useCreateIndex', true);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

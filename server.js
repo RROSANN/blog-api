@@ -50,5 +50,5 @@ const server = http.createServer(app);
 server.on("error", onError);
 server.on("listening", onListening);
 server.listen(process.env.PORT || 3001, () => {
-  console.log(`app is running on port ${process.env.PORT}`)
+  console.log(`app is running on port ${process.env.PORT}`|| 30001)
 });

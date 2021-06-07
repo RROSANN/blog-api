@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://rosan:"+spg7maZVNfZPjfhw+"@cluster0.2q4hy.mongodb.net/myFirstDatabase",
+    "mongodb+srv://rosan:"+MONGO_ATLAS_PW+"@cluster0.2q4hy.mongodb.net/myFirstDatabase",
       {useNewUrlParser: true, useUnifiedTopology: true}
   )
   .then(() => {
